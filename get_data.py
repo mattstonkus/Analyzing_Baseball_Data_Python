@@ -38,3 +38,8 @@ def make_gamelog_df():
         df_temp = pd.read_csv(f'retro/GL{year}.TXT',names=cols)
         df = df.append(df_temp, ignore_index=True)
     return df
+
+def get_event_data():
+    game_event = './game_event'
+    os.mkdir(game_event)
+    dload.save_unzip('https://www.retrosheet.org/events/1916eve.zip', extract_path=game_event , delete_after=True)
