@@ -2,6 +2,7 @@ import dload
 import os.path
 import os
 import pandas as pd
+import shutil
 
 
 def get_data():
@@ -39,7 +40,8 @@ def make_gamelog_df():
         df = df.append(df_temp, ignore_index=True)
     return df
 
-def get_event_data():
+def get_event_data(year):
     game_event = './game_event'
+    shutil.rmtree(game_event)
     os.mkdir(game_event)
-    dload.save_unzip('https://www.retrosheet.org/events/1916eve.zip', extract_path=game_event , delete_after=True)
+    dload.save_unzip(f'https://www.retrosheet.org/events/{year}eve.zip', extract_path=game_event , delete_after=True)
