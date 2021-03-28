@@ -1,0 +1,31 @@
+,file,team_id,league,city,nickname
+0,TEAM2019,ANA,A,Anaheim,Angels
+1,TEAM2019,BAL,A,Baltimore,Orioles
+2,TEAM2019,BOS,A,Boston,Red Sox
+3,TEAM2019,CHA,A,Chicago,White Sox
+4,TEAM2019,CLE,A,Cleveland,Indians
+5,TEAM2019,DET,A,Detroit,Tigers
+6,TEAM2019,HOU,A,Houston,Astros
+7,TEAM2019,KCA,A,Kansas City,Royals
+8,TEAM2019,MIN,A,Minnesota,Twins
+9,TEAM2019,NYA,A,New York,Yankees
+10,TEAM2019,OAK,A,Oakland,Athletics
+11,TEAM2019,SEA,A,Seattle,Mariners
+12,TEAM2019,TBA,A,Tampa Bay,Rays
+13,TEAM2019,TEX,A,Texas,Rangers
+14,TEAM2019,TOR,A,Toronto,Blue Jays
+15,TEAM2019,ARI,N,Arizona,Diamondbacks
+16,TEAM2019,ATL,N,Atlanta,Braves
+17,TEAM2019,CHN,N,Chicago,Cubs
+18,TEAM2019,CIN,N,Cincinnati,Reds
+19,TEAM2019,COL,N,Colorado,Rockies
+20,TEAM2019,LAN,N,Los Angeles,Dodgers
+21,TEAM2019,MIA,N,Miami,Marlins
+22,TEAM2019,MIL,N,Milwaukee,Brewers
+23,TEAM2019,NYN,N,New York,Mets
+24,TEAM2019,PHI,N,Philadelphia,Phillies
+25,TEAM2019,PIT,N,Pittsburgh,Pirates
+26,TEAM2019,SDN,N,San Diego,Padres
+27,TEAM2019,SFN,N,San Francisco,Giants
+28,TEAM2019,SLN,N,St. Louis,Cardinals
+29,TEAM2019,WAS,N,Washington,Nationals
