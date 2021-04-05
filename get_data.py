@@ -32,12 +32,15 @@ def get_retro_data():
     for year in range(1871,2020):
         dload.save_unzip(f'https://www.retrosheet.org/gamelogs/gl{year}.zip', extract_path=retro_path , delete_after=True)
         
-def make_gamelog_df():
+def make_gamelog_df(year):
     df = pd.read_csv('https://raw.githubusercontent.com/maxtoki/baseball_R/master/data/game_log_header.csv')
     cols = list(df.columns)
-    for year in range(1871,2020):
-        df_temp = pd.read_csv(f'retro/GL{year}.TXT',names=cols)
-        df = df.append(df_temp, ignore_index=True)
+    if type(year) == int and year >=1971 and year <=2020:
+        df = pd.read_csv(f'retro/GL{year}.TXT',names=cols)
+    else:
+        for year in range(1871,2020):
+            df_temp = pd.read_csv(f'retro/GL{year}.TXT',names=cols)
+            df = df.append(df_temp, ignore_index=True)
     return df
 
 def get_event_data(year):
